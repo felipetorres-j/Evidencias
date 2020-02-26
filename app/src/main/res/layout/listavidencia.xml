@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="94dp" android:layout_marginTop="20dp">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="166dp"
+                android:layout_height="match_parent" android:layout_weight="1">
+            <TextView
+                    android:text="TextView"
+                    android:textSize="12dp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal|bold|italic"
+                    android:textColor="@android:color/white"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp" android:id="@+id/textViewtit" android:layout_weight="0"
+                    android:layout_marginRight="10dp"/>
+            <TextView
+                    android:text="TextView"
+                    android:textSize="12dp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal|bold|italic"
+                    android:textColor="@android:color/white"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp" android:id="@+id/textViewuser"
+                    android:layout_marginRight="10dp"/>
+            <TextView
+                    android:text="TextView"
+                    android:textSize="12dp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal|bold|italic"
+                    android:textColor="@android:color/white"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp" android:id="@+id/textViewcarrera" android:layout_weight="0"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="150dp"
+                android:layout_height="match_parent" android:layout_weight="1">
+            <Button
+
+                    android:drawableLeft="@android:drawable/ic_menu_edit"
+                    android:background="@drawable/button_rounded"
+                    android:text="Editar"
+                    android:layout_width="150dp"
+
+                    android:layout_height="wrap_content" android:id="@+id/updatebutton" android:layout_weight="1"
+                    android:layout_marginBottom="5dp"/>
+            <Button
+
+
+                    android:layout_width="150dp"
+                    android:text="Eliminar"
+                    android:background="@drawable/ic_eliminar"
+
+                    android:layout_height="wrap_content" android:id="@+id/deletebutton" android:layout_weight="1"
+
+                    android:drawableLeft="@android:drawable/ic_menu_delete"
+                    android:drawingCacheQuality="auto" style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_marginTop="5dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
