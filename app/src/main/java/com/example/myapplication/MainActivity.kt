@@ -10,7 +10,7 @@ import android.widget.ProgressBar
 import android.widget.Toast
 import com.example.myapplication.R
 import com.google.firebase.auth.FirebaseAuth
-
+//inicio del main activity
 class MainActivity : AppCompatActivity() {
     private lateinit var txtUser: EditText
     private lateinit var txtPassword: EditText
