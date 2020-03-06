@@ -11,7 +11,7 @@ import android.view.ViewGroup
 import android.widget.*
 import androidx.fragment.app.FragmentTransaction
 import com.google.firebase.database.FirebaseDatabase
-
+//controlador para las evidencias
 class EvAdapter(val mCtx: Context,val layoutResId:Int, val evList:List<Evidencia>)
     :ArrayAdapter<Evidencia>(mCtx,layoutResId,evList)
 {
