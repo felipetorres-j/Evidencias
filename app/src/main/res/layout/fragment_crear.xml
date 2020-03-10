@@ -8,7 +8,9 @@
     <!-- TODO: Update blank fragment layout -->
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent" android:id="@+id/escenario">
+            android:layout_height="match_parent"
+            android:id="@+id/escenario"
+            android:background="@drawable/side_nav_bar">
 
         <ScrollView
                 android:layout_width="match_parent"
@@ -22,6 +24,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
+                        android:background="@drawable/banner_title"
                         android:id="@+id/textView2" android:textSize="30sp"/>
 
                 <TextView
@@ -34,6 +37,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="20dp"
+                        android:popupBackground="#DFFFFF"
                         android:id="@+id/spinner"/>
                 <EditText
                         android:layout_width="match_parent"
@@ -95,19 +99,25 @@
                 <Spinner
                         android:layout_width="match_parent"
                         android:layout_height="40dp" android:id="@+id/sp_tipo"/>
+
                 <TextView
-                        android:text="Cant. de personas afectadas"
+
+                        android:id="@+id/textView6"
                         android:layout_width="match_parent"
+                        android:layout_height="37dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/banner_title"
                         android:gravity="center"
-                        android:textSize="20sp"
-                        android:layout_height="wrap_content" android:id="@+id/textView6"
-                        android:layout_marginTop="15dp"/>
+                        android:text="Cant. de personas afectadas"
+                        android:textSize="20sp" />
                 <TextView
                         android:text="Interior"
-                        android:textSize="18dp"
+                        android:textSize="20dp"
+                        android:background="@drawable/banner_sub_title"
                         android:layout_width="match_parent"
+                        android:gravity="center"
                         android:layout_height="wrap_content" android:id="@+id/textView8"
-                        android:layout_marginTop="20dp"/>
+                        android:layout_marginTop="5dp"/>
                 <LinearLayout
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
@@ -179,9 +189,11 @@
                 </LinearLayout>
                 <TextView
                         android:text="Externo"
+                        android:background="@drawable/banner_sub_title"
+                        android:gravity="center"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="18sp"
+                        android:textSize="20dp"
                         android:id="@+id/textView11" android:layout_marginTop="20dp"/>
                 <LinearLayout
                         android:orientation="horizontal"
@@ -258,7 +270,9 @@
                         android:layout_height="wrap_content"
                         android:background="@drawable/button_rounded"
                         android:layout_gravity="center"
-                        android:id="@+id/button" android:layout_marginTop="70dp"/>
+                        android:id="@+id/button"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="30dp"/>
 
 
             </LinearLayout>
