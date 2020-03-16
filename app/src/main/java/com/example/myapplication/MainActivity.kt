@@ -51,6 +51,7 @@ class MainActivity : AppCompatActivity() {
                 }
         }
     }
+    //funcion para iniciar sesion
     private fun action(){
         val intent = Intent(this,MenuSlideActivity::class.java)
         val b_user:Bundle = Bundle()
