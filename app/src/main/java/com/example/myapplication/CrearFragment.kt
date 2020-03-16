@@ -156,7 +156,7 @@ class CrearFragment : Fragment(),View.OnClickListener {
 
         if (arguments != null){
             user = arguments!!.getString("user","sin user")
-            Toast.makeText(getActivity(), "usuario:"+user, Toast.LENGTH_SHORT).show();
+
         }
 
         val est_i: Int = Integer.parseInt(est_int?.text.toString())
