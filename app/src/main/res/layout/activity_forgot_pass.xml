@@ -9,6 +9,7 @@
 
     <LinearLayout
             android:orientation="vertical"
+            android:background="@android:color/white"
             android:layout_width="match_parent"
             android:layout_height="match_parent" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
@@ -24,6 +25,9 @@
         <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:background="@drawable/rounded_editext"
+                android:textColorHint="@android:color/black"
                 android:inputType="textPersonName"
                 android:hint="Correo"
                 android:ems="10"
@@ -34,6 +38,6 @@
                 android:layout_height="wrap_content"
                 android:onClick="send"
                 android:background="@drawable/button_rounded"
-        />
+                android:layout_marginTop="20dp"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
