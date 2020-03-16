@@ -43,6 +43,7 @@ class EvAdapter(val mCtx: Context,val layoutResId:Int, val evList:List<Evidencia
 
         return view
     }
+    //funcion para actualizar las evidencias
     private fun showUpdate(position: Int,evidencia: Evidencia){
         Toast.makeText(mCtx,"hasta aqui funciona",Toast.LENGTH_LONG).show()
         val builder= Builder(this.mCtx)
