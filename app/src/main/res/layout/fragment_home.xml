@@ -1,15 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
              tools:context=".HomeFragment" android:id="@+id/IdHome">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+
+    <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/hello_blank_fragment" android:visibility="visible"/>
+            android:background="@android:color/white"
+            android:layout_height="match_parent">
 
-
+        <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView26"/>
+        <TextView
+                android:text="Bienvenido"
+                android:textSize="25dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal|bold|italic"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/bienvenido"
+                android:layout_marginLeft="140dp" android:layout_marginBottom="10dp"/>
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="124dp" app:srcCompat="@mipmap/logo_vertical4" android:id="@+id/imageView4"
+        />
+        <TextView
+                android:text="Version 1.0"
+                android:textSize="20dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal|bold|italic"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView20"
+                android:layout_marginLeft="10dp"/>
+        <TextView
+                android:text="En esta version podras:"
+                android:textSize="15dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal|bold|italic"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView21" android:layout_marginTop="15dp" android:layout_marginLeft="10dp"/>
+        <TextView
+                android:text="-Crear una Evidencia"
+                android:textSize="15dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal|bold|italic"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView22" android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"/>
+        <TextView
+                android:text="-Listar las evidencias enviadas"
+                android:textSize="15dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal|bold|italic"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView23" android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"/>
+        <TextView
+                android:text="-Editar las evidencias"
+                android:textSize="15dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal|bold|italic"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView24" android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"/>
+        <TextView
+                android:text="-Eliminar una evidencia enviada"
+                android:textSize="15dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal|bold|italic"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView25" android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"/>
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="174dp" app:srcCompat="@mipmap/abajo" android:id="@+id/imageView7"
+                android:layout_marginTop="198dp"/>
+    </LinearLayout>
 </FrameLayout>

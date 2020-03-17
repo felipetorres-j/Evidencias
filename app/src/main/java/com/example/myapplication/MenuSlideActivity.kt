@@ -46,6 +46,12 @@ class MenuSlideActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
         var bundle = intent.extras
         us = bundle?.getString("dt")!!
         Toast.makeText(this,"user:"+ us,Toast.LENGTH_LONG).show()
+        homeFragment = HomeFragment()
+        supportFragmentManager
+            .beginTransaction()
+            .replace(R.id.menuid,homeFragment)
+            .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+            .commit()
         navView.setNavigationItemSelectedListener(this)
     }
 
@@ -99,7 +105,16 @@ class MenuSlideActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
 
             }
             R.id.nav_gallery -> {
+                lista_EvFragment = Lista_EvFragment()
+                supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.menuid,lista_EvFragment)
+                    .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+                    .commit()
                 //crearFragment = CrearFragment()
+
+            }
+            R.id.nav_slideshow -> {
                 homeFragment = HomeFragment()
                 supportFragmentManager
                     .beginTransaction()
@@ -107,14 +122,6 @@ class MenuSlideActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
                     .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
                     .commit()
                 //fm.beginTransaction().replace(R.id.escenario, CrearFragment()).commit()
-            }
-            R.id.nav_slideshow -> {
-                    lista_EvFragment = Lista_EvFragment()
-                    supportFragmentManager
-                        .beginTransaction()
-                        .replace(R.id.menuid,lista_EvFragment)
-                        .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
-                        .commit()
             }
             R.id.nav_tools -> {
 
