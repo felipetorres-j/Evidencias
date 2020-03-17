@@ -39,7 +39,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="20dp"
-                        android:popupBackground="#DFFFFF"
+                        android:popupBackground="#414646"
                         android:id="@+id/spinner"/>
                 <EditText
                         android:layout_width="match_parent"
