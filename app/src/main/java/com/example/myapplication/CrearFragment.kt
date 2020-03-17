@@ -18,6 +18,7 @@ import androidx.core.content.ContextCompat.startActivity
 import androidx.core.view.isEmpty
 
 
+
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_PARAM1 = "param1"
@@ -183,12 +184,18 @@ class CrearFragment : Fragment(),View.OnClickListener {
             //startActivity(Intent(this,MenuSlideActivity::class.java))
             //Toast.makeText(this,"Evidencia guardada correctamente", Toast.LENGTH_LONG).show()
             Toast.makeText(getActivity(), "se a enviado la evidencia", Toast.LENGTH_SHORT).show()
-            startActivity(Intent(getActivity(),MenuSlideActivity::class.java))
+            //startActivity(Intent(getActivity(),MenuSlideActivity::class.java))
+            val fragment = HomeFragment()
+            val ft = fragmentManager!!.beginTransaction()
+            ft.replace(R.id.menuid, fragment, "fragment_meters")
+            ft.addToBackStack(null)  //opcional, si quieres agregarlo a la pila
+            ft.commit()
         }
 
     }
 
     override fun onClick(v: View?) {
+
         Toast.makeText(getActivity(), "Hola1223", Toast.LENGTH_SHORT).show();
 
     }

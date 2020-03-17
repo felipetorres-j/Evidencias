@@ -5,12 +5,14 @@
              android:layout_height="match_parent"
              tools:context=".CrearFragment" android:id="@+id/crear">
 
+
     <!-- TODO: Update blank fragment layout -->
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/escenario"
             android:background="@drawable/side_nav_bar">
+
 
         <ScrollView
                 android:layout_width="match_parent"
